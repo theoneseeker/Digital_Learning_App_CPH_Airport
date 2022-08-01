@@ -17,7 +17,7 @@ class AnalyticsFragment : Fragment() {
     private var _binding: FragmentAnalyticsBinding? = null
     private val binding get() = _binding!!
 
-    private lateinit var viewModel: AnalyticsViewModel
+
 
     private lateinit var recyclerView: RecyclerView
 
