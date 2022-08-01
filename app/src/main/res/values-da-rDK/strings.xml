@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Digital Læring App</string>
+    <string name="username">Brugernavn..</string>
+    <string name="submit">Fortsæt</string>
+    <string name="info_message">Browse løs igennem dine træningsmoduler og gå i gang med at løse én!</string>
+    <string name="good_day">God dag,</string>
+    <string name="mandatory">Obligatoriske kurser</string>
+    <string name="settings">Indstillinger</string>
+    <string name="done">Færdiggør</string>
+    <string name="dark_light_mode">Mørk/Lys Tilstand</string>
+    <string name="language">Sprog</string>
+
+</resources>

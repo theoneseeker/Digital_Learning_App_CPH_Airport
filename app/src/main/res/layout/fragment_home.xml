@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.App.HomeFragment"
+    android:orientation="vertical"
+    >
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/circle"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="5dp"
+        app:strokeColor="?colorPrimaryVariant"
+
+        app:strokeWidth="0dp">
+
+        <ImageView
+            android:id="@+id/toolbarProfile"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/sas_airplane" />
+    </com.google.android.material.card.MaterialCardView>
+    <TextView
+        android:id="@+id/tv_greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="42sp"
+        android:fontFamily="@font/playfair_bold_noncap"
+        android:textColor="?colorSecondary"
+        android:text="@string/good_day" />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="42sp"
+        android:fontFamily="@font/playfair_bold_noncap"
+        android:textColor="?colorSecondary"
+        android:text="Jessica" />
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:fontFamily="@font/playfair_reg"
+        android:textColor="?colorSecondary"
+        android:text="@string/info_message"/>
+    <TextView
+        android:id="@+id/tv_mandatory_courses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="24sp"
+        android:fontFamily="@font/playfair_bold_noncap"
+        android:textColor="?colorOnSecondary"
+        android:text="@string/mandatory"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_video"
+    app:startDestination="@id/fragmentVideo">
+
+    <fragment
+        android:id="@+id/fragmentVideo"
+        android:name="cdio.group21.digital_learning_app.ui.video.FragmentVideo"
+        android:label="fragment_fragment_video"
+        tools:layout="@layout/fragment_fragment_video" >
+        <action
+            android:id="@+id/action_fragmentVideo_to_fragmentWatch"
+            app:destination="@id/fragmentWatch" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentWatch"
+        android:name="cdio.group21.digital_learning_app.ui.video.FragmentWatch"
+        android:label="fragment_watch"
+        tools:layout="@layout/fragment_watch" />
+</navigation>

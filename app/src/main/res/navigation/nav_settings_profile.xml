@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_settings_profile"
+    app:startDestination="@id/fragment_landing_holder2">
+
+    <fragment
+        android:id="@+id/fragment_landing_holder2"
+        android:name="cdio.group21.digital_learning_app.Fragment_landing_holder"
+        android:label="fragment_landing_holder"
+        tools:layout="@layout/fragment_landing_holder" >
+        <action
+            android:id="@+id/action_fragment_landing_holder2_to_fragmentSettings"
+            app:destination="@id/fragmentSettings2"
+            app:enterAnim="@anim/slide_from_bottom"
+            app:exitAnim="@anim/stale_animation"
+            app:popExitAnim="@anim/slide_from_top" />
+        <action
+            android:id="@+id/action_fragment_landing_holder2_to_fragmentProfile2"
+            app:destination="@id/fragmentProfile2"
+            app:enterAnim="@anim/slide_from_bottom"
+            app:exitAnim="@anim/stale_animation"
+            app:popExitAnim="@anim/slide_from_top" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSettings2"
+        android:name="cdio.group21.digital_learning_app.ui.Login.FragmentSettings"
+        android:label="FragmentSettings"
+        tools:layout="@layout/fragment_settings"
+        >
+        <action
+            android:id="@+id/action_fragmentSettings2_to_fragment_landing_holder2"
+            app:destination="@id/fragment_landing_holder2"
+            app:exitAnim="@anim/slide_from_top" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProfile2"
+        android:name="cdio.group21.digital_learning_app.ui.App.FragmentProfile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_fragmentProfile2_to_fragment_landing_holder2"
+            app:destination="@id/fragment_landing_holder2"
+            app:exitAnim="@anim/slide_from_top" />
+    </fragment>
+</navigation>

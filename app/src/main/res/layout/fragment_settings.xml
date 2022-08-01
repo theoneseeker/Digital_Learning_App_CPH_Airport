@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?colorOnPrimary"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        >
+
+
+        <TextView
+            android:id="@+id/fragment_edit_profile_headline_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/playfair_black"
+            android:paddingStart="0dp"
+            android:paddingTop="0dp"
+            android:text="@string/settings"
+            android:textColor="?colorSecondary"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/playfair_bold"
+            android:paddingStart="5dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="5dp"
+            android:text="@string/done"
+            android:textSize="16sp"
+            android:textColor="?colorPrimary"
+            android:alpha="0.5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dark_light_mode"
+                android:textColor="?colorSecondary"
+                android:fontFamily="@font/playfair_bold"
+                android:layout_marginTop="32dp"
+                android:layout_gravity="left"
+                android:textAllCaps="true"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_dark_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                >
+            </androidx.appcompat.widget.SwitchCompat>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/language"
+                android:textColor="?colorSecondary"
+                android:fontFamily="@font/playfair_bold"
+                android:layout_marginTop="32dp"
+                android:layout_gravity="left"
+                android:textAllCaps="true"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                >
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_danish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="32dp"
+                    app:cardCornerRadius="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/lang_button"
+                        android:layout_width="48dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/flag_dk"></androidx.appcompat.widget.AppCompatButton>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_english"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    app:cardCornerRadius="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bt_eng"
+                        android:layout_width="48dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/flag_en">
+
+                    </androidx.appcompat.widget.AppCompatButton>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="240dp"
+                android:alpha="0.66"
+                android:src="@drawable/logo_light" />
+
+        </LinearLayout>
+
+</LinearLayout>
